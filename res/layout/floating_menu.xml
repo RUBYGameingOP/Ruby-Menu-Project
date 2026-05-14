@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="#DD111111"
+    android:orientation="vertical"
+    android:padding="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF0000"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RUBY PRIME MENU"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="X"
+            android:background="@android:color/transparent"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            
+            <Switch android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Aimbot" android:textColor="#FFF" android:padding="10dp" android:thumbTint="#FF0000"/>
+            <Switch android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ESP Line" android:textColor="#FFF" android:padding="10dp" android:thumbTint="#FF0000"/>
+            <Switch android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ESP Box" android:textColor="#FFF" android:padding="10dp" android:thumbTint="#FF0000"/>
+            <Switch android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Hard Bypass" android:textColor="#FF0000" android:textStyle="bold" android:padding="10dp" android:thumbTint="#FF0000"/>
+            
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Aim FOV" android:textColor="#FFF" android:layout_marginTop="10dp"/>
+            <SeekBar android:layout_width="match_parent" android:layout_height="wrap_content" android:max="360" android:progress="90" android:progressTint="#FF0000"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
